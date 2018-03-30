@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/telaInicial.unity
+    guid: 4831470bb2039d8468bc0959401b6c47
+  - enabled: 1
+    path: Assets/Scenes/temperaturaResultados.unity
+    guid: 0dab66ff3feedb648a493402962890b2
+  - enabled: 1
+    path: Assets/Scenes/creditosAplicativo.unity
+    guid: ed31814476cc0e24697a6d72419f6a47
