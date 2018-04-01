@@ -38,153 +38,67 @@ public class calcularTemperatura : MonoBehaviour {
 
 	//Função para gerar resultados com base na altitude, latitude e longitude, e armazenamento do resultado por mÊs em result
 	public void GeraResultados(){
+		/*Armazenar altitude, latitude e longitude digitada*/
 		altitude = float.Parse(altitudeInformada.text);
 		latitude = float.Parse(latitudeInformada.text); 
 		longitude = float.Parse(longitudeInformada.text);
 
 		if (mesAtual == "Janeiro") {
+			//Chamamento da função armazenar dados para puxar os dados dos betas correspondentes
 			ArmazenarDadosJaneiro ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultJaneiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+			Debug.Log (resultJaneiro);
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Fevereiro") {
-			ArmazenarDadosFevereiro ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+		} else if (mesAtual == "Fevereiro") {
+			ArmazenarDadosFevereiro();
+			resultFevereiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Março") {
-			ArmazenarDadosMarco ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+		} else if (mesAtual == "Março") {
+			ArmazenarDadosMarco();
+			resultMarco = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Abril") {
+		} else if (mesAtual == "Abril") {
 			ArmazenarDadosAbril ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultAbril = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Maio") {
+		} else if (mesAtual == "Maio") {
 			ArmazenarDadosMaio ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultMaio = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Junho") {
+		} else if (mesAtual == "Junho") {
 			ArmazenarDadosJunho ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultJunho = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Julho") {
-			ArmazenarDadosJulho ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+		} else if (mesAtual == "Julho") {
+			ArmazenarDadosJulho();
+			resultJulho = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Agosto") {
+		} else if (mesAtual == "Agosto") {
 			ArmazenarDadosAgosto ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultJaneiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Setembro") {
+		} else if (mesAtual == "Setembro") {
 			ArmazenarDadosSetembro ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultSetembro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Outubro") {
+		} else if (mesAtual == "Outubro") {
 			ArmazenarDadosOutubro ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultOutubro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Novembro") {
-			ArmazenarDadosNovembro ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+		} else if (mesAtual == "Novembro") {
+			ArmazenarDadosNovembro();
+			resultNovembro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
-	}
-
-	public void GeraResultados(){
-		altitude = float.Parse(altitudeInformada.text);
-		latitude = float.Parse(latitudeInformada.text); 
-		longitude = float.Parse(longitudeInformada.text);
-
-		if (mesAtual == "Dezembro") {
+		} else if (mesAtual == "Dezembro") {
 			ArmazenarDadosDezembro ();
-			resultJaneiro = (valorBeta0 + valorBeta1 + valorBeta2 + valorBeta3);
+			resultNovembro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
 			SceneManager.LoadScene ("temperaturaResultados");
-		}
+		} 
 	}
 
 	/*Funções para armazenamento de dados dos betas do mês de janeiro até dezembro*/
 
 	/*Janeiro*/
-
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosJaneiro(){		
 		//Atribuindo os betas do mês correspondente
