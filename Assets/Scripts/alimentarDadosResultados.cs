@@ -27,27 +27,27 @@ public class alimentarDadosResultados : MonoBehaviour {
 		if (armazenaMes == "Janeiro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultJaneiro.ToString();
 		} else if (armazenaMes == "Fevereiro") {
-			
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultFevereiro.ToString();
 		} else if (armazenaMes == "Março") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultMarco.ToString();
 		} else if (armazenaMes == "Abril") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultAbril.ToString();
 		} else if (armazenaMes == "Maio") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultMaio.ToString();
 		} else if (armazenaMes == "Junho") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultJunho.ToString();
 		} else if (armazenaMes == "Julho") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultJulho.ToString();
 		} else if (armazenaMes == "Agosto") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultAgosto.ToString();
 		} else if (armazenaMes == "Setembro") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultSetembro.ToString();
 		} else if (armazenaMes == "Outubro") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultOutubro.ToString();
 		} else if (armazenaMes == "Novembro") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultNovembro.ToString();
 		} else if (armazenaMes == "Dezembro") {
-
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultDezembro.ToString();
 		}
 	}
 
