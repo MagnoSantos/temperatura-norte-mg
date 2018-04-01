@@ -6,6 +6,13 @@ using UnityEngine.UI;//para habilitar a opção de User Interface , exemplo: bot
 using UnityEngine.SceneManagement;//para alterar as cenas dentro das funções
 
 public class calcularTemperatura : MonoBehaviour {
+	/*Parar criar uma instância dessa classe em outras classes*/
+	public static calcularTemperatura Instance;
+
+	void Awake(){
+		Instance = this;
+	}
+
 	/*Lista contendo os meses*/
 	List<string> listaMeses = new List<string> () {"", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", 
 		"Setembro", "Outubro", "Novembro", "Dezembro"};
@@ -13,7 +20,7 @@ public class calcularTemperatura : MonoBehaviour {
 
 	public Dropdown comboboxMes;//combobox contendo os meses de janeiro a dezembro 
 	public InputField latitudeInformada, longitudeInformada, altitudeInformada;//para coletar as informações digitadas pelo usuário
-	float altitude, latitude, longitude;//para armazenar os dados informados
+	public float altitude, latitude, longitude;//para armazenar os dados informados
 	private float valorBeta0, valorBeta1, valorBeta2, valorBeta3;//para armazenar o beta0, beta1, beta2, beta3 específico de cada mês
 
 	/*Resultados por mes de referência*/
@@ -47,7 +54,6 @@ public class calcularTemperatura : MonoBehaviour {
 			//Chamamento da função armazenar dados para puxar os dados dos betas correspondentes
 			ArmazenarDadosJaneiro ();
 			resultJaneiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
-			Debug.Log (resultJaneiro);
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Fevereiro") {
 			ArmazenarDadosFevereiro();

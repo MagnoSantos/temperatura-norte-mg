@@ -890,11 +890,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8ebe012638d7b44b2ba7c39133ab78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesAtual: {fileID: 94520886}
-  altitudeAtual: {fileID: 0}
-  latitudeAtual: {fileID: 0}
-  longitudeAtual: {fileID: 0}
-  temperaturaCalculada: {fileID: 0}
+  mesReferencia: {fileID: 94520886}
+  altitudeAtual: {fileID: 961197286}
+  latitudeAtual: {fileID: 271229950}
+  longitudeAtual: {fileID: 1426284494}
+  temperaturaCalculada: {fileID: 2003551315}
 --- !u!1 &1868198344
 GameObject:
   m_ObjectHideFlags: 0
