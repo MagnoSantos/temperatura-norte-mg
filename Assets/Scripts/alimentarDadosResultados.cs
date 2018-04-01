@@ -17,21 +17,15 @@ public class alimentarDadosResultados : MonoBehaviour {
 
 	public void SetarDados(){
 		string armazenaMes = calcularTemperatura.Instance.mesAtual;//para coletar o mês atual em calcularTemperatura.cs
-		mesReferencia.text = armazenaMes;//para setar o dado coletado
+		mesReferencia.text = armazenaMes;//para setar o dado coletados
 
-		/*Armazenar altitude, latitude, longitude*/
-		string armazenaAltitude = calcularTemperatura.Instance.altitude;
-		string armazenaLatitude = calcularTemperatura.Instance.latitude;
-		string armazenaLongitude = calcularTemperatura.Instance.longitude;
-
-		/*Setar os dados armazenados*/
-		altitudeAtual.text = armazenaAltitude;
-		latitudeAtual.text = armazenaLatitude;
-		longitudeAtual.text = armazenaLongitude;
-
+		/*Setar os valores de altitude, latitude e longitude*/
+		altitudeAtual.text = calcularTemperatura.Instance.altitude.ToString();//conversão de float para string através do ToString().
+		latitudeAtual.text = calcularTemperatura.Instance.latitude.ToString ();
+		longitudeAtual.text = calcularTemperatura.Instance.longitude.ToString ();
 
 		if (armazenaMes == "Janeiro") {
-			float armazenaResultado = calcularTemperatura.Instance.resultJaneiro;
+			temperaturaCalculada.text = calcularTemperatura.Instance.resultJaneiro.ToString();
 		} else if (armazenaMes == "Fevereiro") {
 			
 		} else if (armazenaMes == "Março") {

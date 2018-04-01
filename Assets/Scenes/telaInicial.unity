@@ -592,6 +592,9 @@ MonoBehaviour:
   latitudeInformada: {fileID: 783304819}
   longitudeInformada: {fileID: 553338130}
   altitudeInformada: {fileID: 718520049}
+  altitude: 0
+  latitude: 0
+  longitude: 0
   resultJaneiro: 0
   resultFevereiro: 0
   resultMarco: 0
