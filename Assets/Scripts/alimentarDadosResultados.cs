@@ -9,8 +9,10 @@ public class alimentarDadosResultados : MonoBehaviour {
 
 	//Calculo da temperaturas média
 	public Text temperaturaCalculada;
-	//Calcula da temperatura máxima
+	//Calculo da temperatura máxima
 	public Text temperaturaCalculadaMax;
+	//Calculo da temperatura minima
+	public Text temperatucaCalculadaMin;
 
 	// Use this for initialization
 	void Start () {
@@ -29,28 +31,51 @@ public class alimentarDadosResultados : MonoBehaviour {
 		if (armazenaMes == "Janeiro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultJaneiro.ToString();
 			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultJaneiroMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultJaneiroMin.ToString ();
 		} else if (armazenaMes == "Fevereiro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultFevereiro.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultFevereiroMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultFevereiroMin.ToString ();
 		} else if (armazenaMes == "Março") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultMarco.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultMarcoMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultMarcoMin.ToString ();
 		} else if (armazenaMes == "Abril") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultAbril.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultAbrilMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultAbrilMin.ToString ();
 		} else if (armazenaMes == "Maio") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultMaio.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultMaioMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultMaioMin.ToString ();
 		} else if (armazenaMes == "Junho") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultJunho.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultJunhoMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultJunhoMin.ToString ();
 		} else if (armazenaMes == "Julho") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultJulho.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultJulhoMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultJulhoMin.ToString ();
 		} else if (armazenaMes == "Agosto") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultAgosto.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultAgostoMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultAgostoMin.ToString ();
 		} else if (armazenaMes == "Setembro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultSetembro.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultSetembroMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultSetembroMin.ToString ();
 		} else if (armazenaMes == "Outubro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultOutubro.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultOutubroMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultOutubroMin.ToString ();
 		} else if (armazenaMes == "Novembro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultNovembro.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultNovembroMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultNovembroMin.ToString ();
 		} else if (armazenaMes == "Dezembro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultDezembro.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultDezembroMax.ToString ();
+			temperatucaCalculadaMin.text = calcularTemperatura.Instance.resultDezembroMin.ToString ();
 		}
 	}
 

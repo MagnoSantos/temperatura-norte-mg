@@ -896,6 +896,7 @@ MonoBehaviour:
   longitudeAtual: {fileID: 1426284494}
   temperaturaCalculada: {fileID: 2003551315}
   temperaturaCalculadaMax: {fileID: 1868198346}
+  temperatucaCalculadaMin: {fileID: 129518220}
 --- !u!1 &1868198344
 GameObject:
   m_ObjectHideFlags: 0

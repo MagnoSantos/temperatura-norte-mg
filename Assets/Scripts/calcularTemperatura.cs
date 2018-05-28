@@ -28,6 +28,9 @@ public class calcularTemperatura : MonoBehaviour {
 	//Para armazenar o beta0, beta1, beta2, beta3 específico de cada mês, temperatura máxima
 	private float valorBeta0Max, valorBeta1Max, valorBeta2Max, valorBeta3Max;
 
+	//Para armazenar o beta0, beta1, beta2, beta3 específico de cada mês, temperatura mínima
+	private float valorBeta0Min, valorBeta1Min, valorBeta2Min, valorBeta3Min, valorBeta4Min;
+
 	//Resultados por mes de referência, temperatura média
 	public float resultJaneiro, resultFevereiro, resultMarco, resultAbril, resultMaio, resultJunho, resultJulho, resultAgosto, 
 	resultSetembro, resultOutubro, resultNovembro, resultDezembro;
@@ -35,6 +38,10 @@ public class calcularTemperatura : MonoBehaviour {
 	//Resultado por mês de refência, temperatura máxima
 	public float resultJaneiroMax, resultFevereiroMax, resultMarcoMax, resultAbrilMax, resultMaioMax, resultJunhoMax, 
 	resultJulhoMax, resultAgostoMax, resultSetembroMax, resultOutubroMax, resultNovembroMax, resultDezembroMax;
+
+	//Resultado por mês de refência, temperatura mínima
+	public float resultJaneiroMin, resultFevereiroMin, resultMarcoMin, resultAbrilMin, resultMaioMin, resultJunhoMin, 
+	resultJulhoMin, resultAgostoMin, resultSetembroMin, resultOutubroMin, resultNovembroMin, resultDezembroMin;
 
 	/*'Nativo do ambiente de desenvolvimento': é acessada sempre que a classe se inicia.*/
 	void Start () {
@@ -63,86 +70,158 @@ public class calcularTemperatura : MonoBehaviour {
 			//Chamamento da função armazenar dados para puxar os dados dos betas correspondentes, temperatura mínima
 			ArmazenarDadosJaneiro ();
 			resultJaneiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosJaneiroMax();
 			resultJaneiroMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosJaneiroMin();
+			resultJaneiroMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Fevereiro") {
 			ArmazenarDadosFevereiro();
 			resultFevereiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosFevereiroMax();
 			resultFevereiroMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosFevereiroMin();
+			resultFevereiroMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Março") {
 			ArmazenarDadosMarco();
 			resultMarco = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosMarcoMax();
 			resultMarcoMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosMarcoMin();
+			resultMarcoMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Abril") {
 			ArmazenarDadosAbril ();
 			resultAbril = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosAbrilMax();
 			resultAbrilMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosAbrilMin();
+			resultAbrilMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Maio") {
 			ArmazenarDadosMaio ();
 			resultMaio = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosMaioMax();
 			resultMaioMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosMaioMin();
+			resultMaioMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Junho") {
 			ArmazenarDadosJunho ();
 			resultJunho = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosJunhoMax();
 			resultJunhoMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosJunhoMin();
+			resultJunhoMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Julho") {
 			ArmazenarDadosJulho();
 			resultJulho = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosJulhoMax();
 			resultJulhoMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosJulhoMin();
+			resultJulhoMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Agosto") {
 			ArmazenarDadosAgosto ();
 			resultJaneiro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosAgostoMax();
 			resultAgostoMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosAgostoMin();
+			resultAgostoMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Setembro") {
 			ArmazenarDadosSetembro ();
 			resultSetembro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosSetembroMax();
 			resultSetembroMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosSetembroMin();
+			resultSetembroMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Outubro") {
 			ArmazenarDadosOutubro ();
 			resultOutubro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosOutubroMax();
 			resultOutubroMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosOutubroMin();
+			resultOutubroMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Novembro") {
 			ArmazenarDadosNovembro();
 			resultNovembro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosNovembroMax();
 			resultNovembroMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosNovembroMin();
+			resultNovembroMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} else if (mesAtual == "Dezembro") {
 			ArmazenarDadosDezembro ();
 			resultNovembro = (valorBeta0 + (altitude * valorBeta1) + (latitude * valorBeta2) + (longitude * valorBeta3));
+
 			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura máximo
 			ArmazenarDadosDezembroMax();
 			resultDezembroMax = (valorBeta0Max + (altitude * valorBeta1Max) + (latitude * valorBeta2Max) + (longitude * valorBeta3Max));
+
+			//Chamamento da função armazenar dados max para puxar os dados dos betas de temperatura mínima
+			ArmazenarDadosJaneiroMin();
+			resultDezembroMin = (valorBeta0Min + (altitude * valorBeta1Min) + (latitude * valorBeta2Min) + (longitude * valorBeta3Min));
+
 			SceneManager.LoadScene ("temperaturaResultados");
 		} 
 	}
@@ -275,10 +354,10 @@ public class calcularTemperatura : MonoBehaviour {
 	/*Janeiro*/
 	public void ArmazenarDadosJaneiroMax(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0Max = 32.6563255f;
-		valorBeta1Max = -0.00688869f;
-		valorBeta2Max = 0.282249656f;
-		valorBeta3Max = -0.149999022f;
+		valorBeta0Max = 33.1208115172211f;
+		valorBeta1Max = -0.007362177914991f;
+		valorBeta2Max = 0.175502386966031f;
+		valorBeta3Max = -0.11856331570667f;
 	}
 
 	/*Fevereiro*/
@@ -378,5 +457,117 @@ public class calcularTemperatura : MonoBehaviour {
 		valorBeta1Max = -0.00688869f;
 		valorBeta2Max = 0.282249656f;
 		valorBeta3Max = -0.149999022f;
+	}
+
+	/*------------------------------------------------------------------------------------------
+	 * Temperatura mínima - Valor dos Betas
+	 * ----------------------------------------------------------------------------------------- */
+
+	/*Janeiro*/
+	public void ArmazenarDadosJaneiroMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 19.9617432579737f;
+		valorBeta1Min = -0.004171252159549f;
+		valorBeta2Min = 0.334243580340433f;
+		valorBeta3Min = -0.190873407284751f;
+	}
+
+	/*Fevereiro*/
+	public void ArmazenarDadosFevereiroMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 20.6199686927442f;
+		valorBeta1Min = -0.004173508926329f;
+		valorBeta2Min = 0.4388755411734f;
+		valorBeta3Min = -0.215926638384238f;
+	}
+
+	/*Marco*/
+	public void ArmazenarDadosMarcoMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 23.5609040043777f;
+		valorBeta1Min = -0.004171857079899f;
+		valorBeta1Min = 0.458153753787953f;
+		valorBeta3Min = -0.155783575778481f;
+	}
+
+	/*Abril*/
+	public void ArmazenarDadosAbrilMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 24.4248896018465f;
+		valorBeta1Min = -0.003849298431485f;
+		valorBeta2Min = 0.659750523091796f;
+		valorBeta3Min = -0.186267553030254f;
+	}
+
+	/*Maio*/
+	public void ArmazenarDadosMaioMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 28.0191471988831f;
+		valorBeta1Min = -0.002798371088785f;
+		valorBeta1Min = 0.912741189815817f;
+		valorBeta3Min = -0.133245695647267f;
+	}
+
+	/*junho*/
+	public void ArmazenarDadosJunhoMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 29.2133948282952f;
+		valorBeta1Min = -0.002070977698143f;
+		valorBeta1Min = 0.99491381948262f;
+		valorBeta3Min = -0.085982985136374f;
+	}
+
+	/*Julho*/
+	public void ArmazenarDadosJulhoMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 27.5563964001505f;
+		valorBeta1Min = -0.002125547099813f;
+		valorBeta1Min = 0.970345400671575f;
+		valorBeta3Min = -0.104439899472489f;
+	}
+
+	/*Agosto*/
+	public void ArmazenarDadosAgostoMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 21.5035290605081f;
+		valorBeta1Min = -0.003044536258635f;
+		valorBeta1Min = 0.91816048052471f;
+		valorBeta3Min = -0.253885357451786f;
+	}
+
+	/*Setembro*/
+	public void ArmazenarDadosSetembroMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 15.0681089444019f;
+		valorBeta1Min = -0.004814215866621f;
+		valorBeta1Min = 0.737095730196585f;
+		valorBeta3Min = -0.413738620891601f;
+	}
+
+	/*Outubro*/
+	public void ArmazenarDadosOutubroMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 15.6193819323463f;
+		valorBeta1Min = -0.005533102109703f;
+		valorBeta1Min = 0.627605934090551f;
+		valorBeta3Min = -0.411796458761225f;
+	}
+
+	/*Novembro*/
+	public void ArmazenarDadosNovembroMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 21.1506653254822f;
+		valorBeta1Min = -0.004849051948237f;;
+		valorBeta1Min = 0.543745370701188f;
+		valorBeta3Min = -0.251275159240125f;
+	}
+
+	/*Dezembro*/
+	public void ArmazenarDadosDezembroMin(){		
+		//Atribuindo os betas do mês correspondente
+		valorBeta0Min = 21.5359877837715f;
+		valorBeta1Max = -0.004333280341804f;
+		valorBeta1Min = 0.400617980200132f;
+		valorBeta3Min = -0.183458972216966f;
 	}
 }
