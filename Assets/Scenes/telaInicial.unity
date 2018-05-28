@@ -607,6 +607,18 @@ MonoBehaviour:
   resultOutubro: 0
   resultNovembro: 0
   resultDezembro: 0
+  resultJaneiroMax: 0
+  resultFevereiroMax: 0
+  resultMarcoMax: 0
+  resultAbrilMax: 0
+  resultMaioMax: 0
+  resultJunhoMax: 0
+  resultJulhoMax: 0
+  resultAgostoMax: 0
+  resultSetembroMax: 0
+  resultOutubroMax: 0
+  resultNovembroMax: 0
+  resultDezembroMax: 0
 --- !u!1 &542750334
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +948,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 609214512}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541403906}
+        m_MethodName: AlterarScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: informacoesAplicativo
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &609214512

@@ -7,8 +7,10 @@ using System;
 public class alimentarDadosResultados : MonoBehaviour {
 	public Text mesReferencia, altitudeAtual, latitudeAtual, longitudeAtual;
 
-	/*Temperaturas*/
+	//Calculo da temperaturas média
 	public Text temperaturaCalculada;
+	//Calcula da temperatura máxima
+	public Text temperaturaCalculadaMax;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +28,7 @@ public class alimentarDadosResultados : MonoBehaviour {
 
 		if (armazenaMes == "Janeiro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultJaneiro.ToString();
+			temperaturaCalculadaMax.text = calcularTemperatura.Instance.resultJaneiroMax.ToString ();
 		} else if (armazenaMes == "Fevereiro") {
 			temperaturaCalculada.text = calcularTemperatura.Instance.resultFevereiro.ToString();
 		} else if (armazenaMes == "Março") {

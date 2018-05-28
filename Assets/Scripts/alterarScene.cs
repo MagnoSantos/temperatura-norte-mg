@@ -14,4 +14,8 @@ public class alterarScene : MonoBehaviour {
 	public void AlterarScene(string nomeScene){
 		SceneManager.LoadScene (nomeScene);
 	}
+
+	public void DirecionarLinkYouTube(){
+		Application.OpenURL ("https://www.youtube.com/?gl=BR&hl=pt");
+	}
 }
