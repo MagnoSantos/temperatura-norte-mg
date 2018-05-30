@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿iusing System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -231,120 +231,120 @@ public class calcularTemperatura : MonoBehaviour {
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosJaneiro(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 22.46191789f;
-		valorBeta1 = -0.00562171f;
-		valorBeta2 = 0.353965152f;
-		valorBeta3 = -0.26789465f;
+		valorBeta0 = 24.4911451550632f;
+		valorBeta1 = -0.005610300726464f;
+		valorBeta2 = 0.2711196801556f;
+		valorBeta3 = -0,188431608200246f;
 	}
 
 	/*Fevereiro*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosFevereiro(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 25.07632831f;
-		valorBeta1 = -0.0060443f;
-		valorBeta2 = 0.258814574f;
-		valorBeta3 = -0.18529663f;
+		valorBeta0 = 25.1282396706392f;
+		valorBeta1 = -0.006049900961338f;
+		valorBeta2 = 0.255992493646269f;
+		valorBeta3 = -0.183138233239153f;
 	}
 
 	/*Marco*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosMarco(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 27.56645226f;
-		valorBeta1 = -0.005750053f;
-		valorBeta2 = 0.352410032f;
-		valorBeta3 = -0.151371178f;
+		valorBeta0 = 27.7837171004622f;
+		valorBeta1 = -0.005785779112775f;
+		valorBeta2 = 0.342527381075753f;
+		valorBeta3 = -0.143342900383917f;
 	}
 
 	/*Abril*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosAbril(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 24.24019904f;
-		valorBeta1 = -0.005571899f;
-		valorBeta2 = 0.602462578f;
-		valorBeta3 = -0.303233746f;
+		valorBeta0 = 24.3513052185253f;
+		valorBeta1 = -0.005587859848834f;
+		valorBeta2 = 0.591725979261353f;
+		valorBeta3 = -0.296835399949706f;
 	}
 
 	/*Maio*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosMaio(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 27.75671717f;
-		valorBeta1 = -0.004946614f;
-		valorBeta2 = 0.914390594f;
-		valorBeta3 = -0.291344813f;
+		valorBeta0 = 27.8532493865317f;
+		valorBeta1 = -0.00496029346883f;
+		valorBeta2 = 0.91808458560569f;
+		valorBeta3 = -0.2908966550688f;
 	}
 
 	/*junho*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosJunho(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 25.148073f;
-		valorBeta1 = -0.004748071f;
-		valorBeta2 = 0.955234457f;
-		valorBeta3 = -0.333046848f;
+		valorBeta0 = 25.1704918397638f;
+		valorBeta1 = -0.004755349361377f;
+		valorBeta2 = 0.96354533082198f;
+		valorBeta3 = -0.336006015920775f;
 	}
 
 	/*Julho*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosJulho(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 20.80173596f;
-		valorBeta1 = -0.005209672f;
-		valorBeta2 = 0.879422538f;
-		valorBeta3 = -0.407199019f;
+		valorBeta0 = 20.835277832534f;
+		valorBeta1 = -0.005191462884089f;
+		valorBeta2 = 0.888089645699864f;
+		valorBeta3 = -0.409510080727543f;
 	}
 
 	/*Agosto*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosAgosto(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 14.38906179f;
-		valorBeta1 = -0.00608358f;
-		valorBeta2 = 0.734081364f;
-		valorBeta3 = -0.537748469f;
+		valorBeta0 = 14.4715629804863f;
+		valorBeta1 = -0.006124993261633f;
+		valorBeta2 = 0.736162295422085f;
+		valorBeta3 = -0.537532226197881f;
 	}
 
 	/*Setembro*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosSetembro(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 11.68365906f;
-		valorBeta1 = -0.006794593f;
-		valorBeta2 = 0.742665898f;
-		valorBeta3 = -0.66198122f;
+		valorBeta0 = 11.3711194319772f;
+		valorBeta1 = -0.006789111785379f;
+		valorBeta2 = 0.74971204354751f;
+		valorBeta3 = -0.671575913292143f;
 	}
 
 	/*Outubro*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosOutubro(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 15.81996905f;
-		valorBeta1 = -0.00696548f;
-		valorBeta2 = 0.687634743f;
-		valorBeta3 = -0.577690088f;
+		valorBeta0 = 15.8569513982846f;
+		valorBeta1 = -0.006969744772108f;
+		valorBeta2 = 0.687210062033433f;
+		valorBeta3 = -0.576763265338939f;
 	}
 
 	/*Novembro*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosNovembro(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 21.255375f;
-		valorBeta1 = -0.005974951f;
-		valorBeta2 = 0.509715874f;
-		valorBeta3 = -0.353573454f;
+		valorBeta0 = 21.090552100174f;
+		valorBeta1 = -0.005950311214409f;
+		valorBeta2 = 0.504892568937374f;
+		valorBeta3 = -0.354905843372933f;
 	}
 
 	/*Dezembro*/
 	//Informações importantes: a função possui encapsulamento privado e não possui retorno
 	public void ArmazenarDadosDezembro(){		
 		//Atribuindo os betas do mês correspondente
-		valorBeta0 = 25.44085612f;
-		valorBeta1 = -0.005509049f;
-		valorBeta2 = 0.351973746f;
-		valorBeta3 = -0.190853002f;
+		valorBeta0 = 25.0021589978483f;
+		valorBeta1 = -0.005554583270082f;
+		valorBeta2 = 0.328108435786612f;
+		valorBeta3 = -0.19217200206138f;
 	}
 
 	/*------------------------------------------------------------------------------------------
